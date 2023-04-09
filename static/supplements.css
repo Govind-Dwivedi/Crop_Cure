@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Lato&family=Poppins:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins' ,sans-serif;
+  background:  linear-gradient(to left , #0dcf41 , #044a19);
+  overflow: hidden;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap:40px;
+    font-size: 20px;
+    background-color: rgb(6, 167, 6);
+    border-width: 250px;
+    width: 100%;
+    position: absolute;
+    height: 28px;
+    top: 0;
+  
+  }
+  a{
+    text-decoration: none;
+    display: inline-block;
+  }
+  .hover-links{
+    color: white;
+  }
+  .hover-links:hover{
+    color: black;
+    transition: 0.2s ease-out;
+  }
+  h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  h2{
+    text-align: center;
+    font-weight: 100;
+  }
+  .box-1 img{
+    height: 200px;
+    width:166px;
+  margin:30px 50px;
+
+  }
+  .box-1 {
+    background-color: #f2f2f2;
+    border: 0px solid lightgray;
+    border-radius: 20px;
+    display: inline-block;
+    height: 280px;
+    width: 250px;
+    margin: 30px;
+    
+  }
+  .r{
+    text-align: center;
+    font-weight: 200;
+}
