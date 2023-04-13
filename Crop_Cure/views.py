@@ -6,7 +6,8 @@ from tensorflow.keras.utils import img_to_array
 from tensorflow.keras.applications.vgg19 import preprocess_input
 import numpy as np
 
-model=load_model("D:/Downloads/best_model.h5")
+model=load_model("best_model.h5")
+
 result = {
   0 : "Apple_Apple_scab",
   1 : "Apple_Black_rot",
