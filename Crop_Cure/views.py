@@ -41,19 +41,14 @@ def upload(request):
     if 'img' in request.FILES:
       img = request.FILES['img']
       imag = Image.open(img)              #Converts input image to PIL
-      imag.show()
 
       open_cv_image = np.array(imag)
       open_cv_image = open_cv_image[:, :, ::-1].copy()    #Convert PIL to cv2
       cv2.imshow("hi",open_cv_image)
-      cv2.waitKey(0)
-      cv2.destroyAllWindows()
 
       imag = cv2.resize(open_cv_image, (256, 256))      #Resize cv2 image
       print("Final = ",imag)
       cv2.imshow('image', imag)
-      cv2.waitKey(0)
-      cv2.destroyAllWindows()
 
       color_coverted = cv2.cvtColor(imag, cv2.COLOR_BGR2RGB)
       pil_image = Image.fromarray(color_coverted)       #Converts resized cv2 image again to PIL
