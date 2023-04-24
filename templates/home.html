@@ -1,31 +1,28 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<link rel="stylesheet" href="{% static 'home.css' %}">
-<body>
-   <div class="top-banner">
-   <nav>
-    <div class="container">
-            <ul >
-                <li><a href="{% url 'home' %}" class="hover-links">Home</a></li>
-                <li><a href="{% url 'upload' %}"class="hover-links">Crop Cure</a></li>
-                <li><a href="{% url 'supplements' %}"class="hover-links">Supplements</a></li>
-            </ul>
-        </div>
-    </div>
-   </nav>
-    <h1 class="a1"> <img src="{% static 'maple.jpeg' %}">Plant Disease Detection <img src="{% static 'maple.jpeg' %}"></h1>
-
-    <p>This Crop Cure will Help To Detect Disease From  Following Veggies and Fruits </p>
-    
-    <div class="gallery">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Home</title>
+   </head>
+   <link rel="stylesheet" href="{% static 'home.css' %}">
+   <body>
+      <div class="top-banner">
+        <nav>
+            <div class="container">
+               <ul >
+                  <li><a href="{% url 'home' %}" class="hover-links">Home</a></li>
+                  <li><a href="{% url 'upload' %}"class="hover-links">Crop Cure</a></li>
+                  <li><a href="{% url 'supplements' %}"class="hover-links">Supplements</a></li>
+               </ul>
+            </div>
+        </nav>
+      </div>
+      <h1 class="a1"> <img src="{% static 'maple.jpeg' %}">Plant Disease Detection <img src="{% static 'maple.jpeg' %}"></h1>
+      <p>This Crop Cure will Help To Detect Disease From  Following Veggies and Fruits </p>
+      <div class="gallery">
         <div class="box" style="background-image: url({% static 'apple.jpeg' %});">Apple</div>
         <div class="box" style="background-image: url({% static 'carrot.jpeg' %});">Carrot</div>
         <div class="box" style="background-image: url({% static 'corn.jpeg' %});">Corn</div>
@@ -35,8 +32,7 @@
         <div class="box" style="background-image: url({% static 'orange.jpeg' %});">Orange</div>
         <div class="box" style="background-image: url({% static 'spinach.jpeg' %});">Spinach</div>
         <div class="box" style="background-image: url({% static 'tomato.jpeg' %});">Tomato</div>
-
-    <script src="https://kit.fontawesome.com/c5ed7adf54.js" crossorigin="anonymous"></script>
-
-</body>
+      </div>
+      <script src="https://kit.fontawesome.com/c5ed7adf54.js" crossorigin="anonymous"></script>
+   </body>
 </html>

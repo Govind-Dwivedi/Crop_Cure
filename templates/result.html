@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cure</title>
+   </head>
+   <link rel="stylesheet" href="{% static 'result.css' %}">
+   <body>
+      <div class="top-banner">
+        <nav>
+            <div class="container">
+               <ul>
+                  <li><a href="{% url 'home' %}" class="hover-links">Home</a></li>
+                  <li><a href="{% url 'upload' %}" class="hover-links">Crop Cure</a></li>
+                  <li><a href="{% url 'supplements' %}"class="hover-links">Supplements</a></li>
+               </ul>
+            </div>
+        </nav>
+      </div>
+      <div class="head">
+         <h1 class="a1"> <img src="{% static 'leaf.jpeg' %}"> {{ pred }} <img src="{% static 'leaf.jpeg' %}" alt=""></h1>
+      </div>
+      <div class="images">
+      <div class="box-1">
+         <p class="r">Input image</p>
+         <img  src="{{ MEDIA_URL }}input.jpeg">
+      </div>
+      <div class="box-5">
+         <p class="r">Sample image of a leaf with given diseaese</p>
+         <img src="{{ MEDIA_URL }}samples/{{ pred }}.jpg">
+      </div>
+    </div>
+      </br>
+      <div class="box-2">
+         <h4>Description :</h4>
+         <p > Early blight, caused by Alternaria solani, is a common fungal disease of tomatoes grown in fields, greenhouses, and high tunnels. In warm, rainy and wet weather, epidemics of this disease can cause severe defoliation, yield loss, and poor fruit quality</p>
+      </div>
+      <div class = "boxes">
+         <div class="box-3"  >
+            <h4 style="margin-top: 4%;">Prevent This Plant Disease by follow below steps :</h4>
+            <p style="font-size: large; font-weight: 200;"> Maintain plant vigor. Maintaining adequate fertilization and improving host vigor can reduce susceptibility to early blight.Remove volunteer weeds.Rotate every 2-3 years.</p>
+         </div>
+         <div class="box-4">
+            <p  class="r">Supplement</p>
+            <img src="{{ MEDIA_URL }}supplements/{{ pred }}.jpeg">
+         </div>
+      </div>
+   </body>
+</html>
