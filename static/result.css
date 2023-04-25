@@ -7,9 +7,8 @@
 body{
   font-family: 'Poppins' ,sans-serif;
   background:  linear-gradient(to left , #0dcf41 , #044a19);
-  
-
 }
+
 ul{
     list-style: none;
     display: flex;
@@ -21,7 +20,6 @@ ul{
     position: absolute;
     height: 28px;
     top: 0;
-  
   }
   a{
     text-decoration: none;
@@ -60,59 +58,54 @@ ul{
 
   .images{
     display: flex;
-    justify-content:space-evenly;
+    justify-content: center;
+    width: 1366px;
+    height: 250px;
+  }
+
+  .wrapper {
+    width: 300px;
+    display: flex;
+    justify-content: center;
   }
 
   .box-1 {
     background-color: #f2f2f2;
     border: 0px solid lightgray;
     border-radius: 20px;
-    /*display: inline-block;*/
     height: 250px;
     width: 240px;
-    position: absolute;
-    left: 0;
-    /*bottom: 250px;*/
-
-    
   }
+
   .box-5 {
     background-color: #f2f2f2;
     border: 0px solid lightgray;
     border-radius: 20px;
-    /*display: inline-block;*/
     height: 250px;
     width: 240px;
-    position: absolute;
-    right: 1%;
-    /*bottom: 250px;*/
-    
   }
+
   .box-2{
     background-color: #f2f2f2;
     border: 0px solid lightgray;
     border-radius: 20px;
-    display: inline-block;
-    justify-items: inline;
-    height: 200px;
-    margin: 1% 22%;
-
+    display: block;
+    margin: 1% 5%;
   }
+
+  .boxes{
+    display: flex;
+    justify-content:space-between;
+    margin: 1% 5%;
+  }
+
   .box-3{
-    
     background-color: #f2f2f2;
     border: 0px solid lightgray;
     border-radius: 20px;
-    display: inline-block;
-    justify-items: inline;
-    height: 200px;
-    width: 650px;
-    position: absolute;
-    left:20px;
-  }
-  .boxes{
-    display: flex;
-    justify-content:space-evenly;
+    width: 950px;
+    /*display: inline-block;
+    justify-items: inline;*/
   }
   .box-4{
     background-color: #f2f2f2;
@@ -121,10 +114,6 @@ ul{
     display: inline-block;
     height: 220px;
     width: 240px;
-    position: absolute;
-    right: 10%;
-    
-    
   }
   .box-4 img{
     height: 150px;

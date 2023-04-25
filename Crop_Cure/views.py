@@ -5,8 +5,15 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.utils import img_to_array
 from tensorflow.keras.applications.vgg19 import preprocess_input
 import numpy as np
+import pandas as pd
+from pathlib import Path
 
 model=load_model("best_model.h5")
+'''
+disease_info_path1 = 
+disease_info_path = Path(disease_info_path1)
+'''
+disease_info = pd.read_csv(str(settings.BASE_DIR)+'\Crop_Cure\disease_info.csv' , encoding='cp1252')
 
 result = {
   0 : "Apple_scab",
@@ -58,11 +65,24 @@ def upload(request):
       
       pred=np.argmax(model.predict(img))
 
+      title = disease_info['disease_name'][pred]
+      description =disease_info['description'][pred]
+      prevent = disease_info['Possible Steps'][pred]
+      image_url = disease_info['image_url'][pred]
+      print("pred=", pred)
       context = {
-        'pred' : result[pred],
+        'pred' : pred,
+        'result' : result[pred],
+        'title' : title,
+        'desc' : description,
+        'prevent' : prevent,
+        'image_url' : image_url
         }
       return render(request, 'result.html', context)
   return render(request, 'upload.html', context)
 
 def supplements(request):
   return render(request, 'supplements.html')
+
+def submit(request):
+  return render(request, 'submit.html')

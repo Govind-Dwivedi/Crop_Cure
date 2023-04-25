@@ -21,31 +21,47 @@
         </nav>
       </div>
       <div class="head">
-         <h1 class="a1"> <img src="{% static 'leaf.jpeg' %}"> {{ pred }} <img src="{% static 'leaf.jpeg' %}" alt=""></h1>
+         <h1 class="a1"> <img src="{% static 'leaf.jpeg' %}"> {{ result }} <img src="{% static 'leaf.jpeg' %}" alt=""></h1>
       </div>
+      <br>
       <div class="images">
-      <div class="box-1">
-         <p class="r">Input image</p>
-         <img  src="{{ MEDIA_URL }}input.jpeg">
+         <div class="wrapper">
+            <div class="box-1">
+               <p class="r">Input image</p>
+               <img  src="{{ MEDIA_URL }}input.jpeg">
+            </div>
+         </div>
+         <div class ="wrapper">
+            <div class="box-5">
+               <p class="r">Sample image of a leaf with given prediction</p>
+               <img src="{{ MEDIA_URL }}samples/{{ result }}.jpg">
+            </div>
+         </div>
       </div>
-      <div class="box-5">
-         <p class="r">Sample image of a leaf with given diseaese</p>
-         <img src="{{ MEDIA_URL }}samples/{{ pred }}.jpg">
-      </div>
-    </div>
-      </br>
       <div class="box-2">
-         <h4>Description :</h4>
-         <p > Early blight, caused by Alternaria solani, is a common fungal disease of tomatoes grown in fields, greenhouses, and high tunnels. In warm, rainy and wet weather, epidemics of this disease can cause severe defoliation, yield loss, and poor fruit quality</p>
+         <h4>
+            {% if pred == 3 or pred == 7 or pred == 10 or pred == 20 %}
+               Tips to Grow Healthy Plants :
+            {% else %}
+               Brief Descritpion :
+            {% endif %}
+         </h4>
+         <p style="padding: 3px;"> {{desc}} </p>
       </div>
       <div class = "boxes">
          <div class="box-3"  >
-            <h4 style="margin-top: 4%;">Prevent This Plant Disease by follow below steps :</h4>
-            <p style="font-size: large; font-weight: 200;"> Maintain plant vigor. Maintaining adequate fertilization and improving host vigor can reduce susceptibility to early blight.Remove volunteer weeds.Rotate every 2-3 years.</p>
+            <h4 style="margin-top: 4%;">
+               {% if pred == 3 or pred == 7 or pred == 10 or pred == 20 %}
+                  Benefits :
+               {% else %}
+                  Prevent This Plant Disease By follow below steps :
+               {% endif %}
+            </h4>
+            <p style="padding: 3px;"> {{prevent}} </p>
          </div>
          <div class="box-4">
             <p  class="r">Supplement</p>
-            <img src="{{ MEDIA_URL }}supplements/{{ pred }}.jpeg">
+            <img src="{{ MEDIA_URL }}supplements/{{ result }}.jpeg">
          </div>
       </div>
    </body>

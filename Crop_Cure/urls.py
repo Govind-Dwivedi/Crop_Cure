@@ -23,6 +23,7 @@ urlpatterns = [
     path('upload/', views.upload, name='upload'),
     path('supplements/', views.supplements, name='supplements'),
     path('admin/', admin.site.urls),
+    path('submit/', views.submit, name="submit"),
 ]
 
 from django.conf import settings
