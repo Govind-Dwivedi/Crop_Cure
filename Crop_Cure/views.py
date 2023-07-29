@@ -9,10 +9,6 @@ import pandas as pd
 from pathlib import Path
 
 model=load_model("best_model.h5")
-'''
-disease_info_path1 = 
-disease_info_path = Path(disease_info_path1)
-'''
 disease_info = pd.read_csv(str(settings.BASE_DIR)+'\Crop_Cure\disease_info.csv' , encoding='cp1252')
 
 result = {
