@@ -64,7 +64,6 @@ def upload(request):
       description =disease_info['description'][pred]
       prevent = disease_info['Possible Steps'][pred]
       image_url = disease_info['image_url'][pred]
-      print("pred=", pred)
       context = {
         'pred' : pred,
         'result' : result[pred],
