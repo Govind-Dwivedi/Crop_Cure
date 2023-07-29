@@ -1,43 +1,47 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Supplements</title>
-   </head>
-   <link rel="stylesheet" href="{% static 'supplements.css' %}">
-   <body>
-      <nav>
-         <div class="container">
-            <ul >
-               <li><a href="{% url 'home' %}" class="hover-links">Home</a></li>
-               <li><a href="{% url 'upload' %}"class="hover-links">Crop Cure</a></li>
-               <li><a href="{% url 'supplements' %}"class="hover-links">Supplements</a></li>
-            </ul>
-         </div>
-      </nav>
-      <div class="head">
-         <h1 class="a1"> <img src="{% static 'supplements.jpeg' %}">Supplements<img src="{% static 'supplements.jpeg' %}"></h1>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Supplements</title>
+</head>
+<link rel="stylesheet" href="{% static 'supplements.css' %}">
+
+<body>
+   <nav>
+      <div class="container">
+         <ul>
+            <li><a href="{% url 'home' %}" class="hover-links">Home</a></li>
+            <li><a href="{% url 'upload' %}" class="hover-links">Crop Cure</a></li>
+            <li><a href="{% url 'supplements' %}" class="hover-links">Supplements</a></li>
+         </ul>
       </div>
-      <h2>Supplements and Fertilizers</h2>
-      <div class="box-1">
-         <p class="r">Supplements</p>
-         <img src="{% static 'organic fungiside.jpeg' %}">
-      </div>
-      <div class="box-1">
-         <p class="r">Supplements</p>
-         <img src="{% static 'fungix.jpeg' %}">    
-      </div>
-      <div class="box-1">
-         <p class="r">Supplements</p>
-         <img src="{% static 'prozol.jpeg' %}">  
-      </div>
-      <div class="box-1">
-         <p class="r">Fertilizer</p>
-         <img src="{% static 'fertilizer.jpeg' %}">
-      </div>
-      <script src="https://kit.fontawesome.com/c5ed7adf54.js" crossorigin="anonymous"></script>
-   </body>
+   </nav>
+   <div class="head">
+      <h1 class="a1"> <img src="{% static 'supplements.jpeg' %}">Supplements<img src="{% static 'supplements.jpeg' %}">
+      </h1>
+   </div>
+   <h2>Supplements and Fertilizers</h2>
+   <div class="box-1">
+      <p class="r">Supplements</p>
+      <img src="{% static 'organic fungiside.jpeg' %}">
+   </div>
+   <div class="box-1">
+      <p class="r">Supplements</p>
+      <img src="{% static 'fungix.jpeg' %}">
+   </div>
+   <div class="box-1">
+      <p class="r">Supplements</p>
+      <img src="{% static 'prozol.jpeg' %}">
+   </div>
+   <div class="box-1">
+      <p class="r">Fertilizer</p>
+      <img src="{% static 'fertilizer.jpeg' %}">
+   </div>
+   <script src="https://kit.fontawesome.com/c5ed7adf54.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
