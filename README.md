@@ -1,17 +1,17 @@
 # Crop_Cure
 It is an ML project which tells the disease name that a plant may have based on its leaves images.
 ## Technologies Used 
-  1. CNN (Convolution Neural Network) :- An ML model generally used in image classification.
-  2. Django :- Used in backend
-  3. HTML, CSS and JS 
+   1. CNN (Convolution Neural Network): An ML model generally used in image classification.
+  3. Django: Used in backend
+  5. HTML, CSS and JS 
      
 ## Installation
   1. Clone this repository.
   2. Navigate to the directory where you have stored this repo and run in cmd
-     >pip install -r requirements.txt
-  3. Then run
+    >pip install -r requirements.txt
+  4. Then run
      >python manage.py runserver
-  4. Go to
+  5. Go to
      >https://127.0.0.1:8000
 
 ## Screenshots
