@@ -8,10 +8,12 @@ It is an ML project which tells the disease name that a plant may have based on 
 ## Installation
   1. Clone this repository.
   2. Navigate to the directory where you have stored this repo and run in cmd
-    >pip install -r requirements.txt
+     
+     >pip install -r requirements.txt
   4. Then run
+     
      >python manage.py runserver
-  5. Go to
+  6. Go to
      >https://127.0.0.1:8000
 
 ## Screenshots
