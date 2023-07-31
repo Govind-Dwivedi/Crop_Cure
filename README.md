@@ -14,15 +14,15 @@ It is an ML project which tells the disease name that a plant may have based on 
   4. Go to
      >https://127.0.0.1:8000
 
-### Screenshots
-#### Home Page:
+## Screenshots
+### Home Page:
 ![image](https://github.com/Govind-Dwivedi/Crop_Cure/assets/95977176/75bf8af9-487e-44c5-b748-333d47e8365d)
 
-#### Upload image page:
+### Upload image page:
 ![image](https://github.com/Govind-Dwivedi/Crop_Cure/assets/95977176/cc5f85fe-7838-4d16-903c-d1653e5c2970)
 
-#### Result Page:
+### Result Page:
 ![image](https://github.com/Govind-Dwivedi/Crop_Cure/assets/95977176/03154b19-b050-40e5-a69e-99a48eb7d706)
 
-#### Supplements page:
+### Supplements page:
 ![image](https://github.com/Govind-Dwivedi/Crop_Cure/assets/95977176/5e29619d-0f74-462f-bcc3-1628548b0079)
